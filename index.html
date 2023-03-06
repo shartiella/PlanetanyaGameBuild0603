@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=900 height=1000></canvas>
+      <canvas id="unity-canvas" width=720 height=1280></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,13 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/PlanetanyaGameBuild7.loader.js";
+      var loaderUrl = buildUrl + "/PlanetanyaGameBuild8.loader.js";
       var config = {
-        dataUrl: buildUrl + "/PlanetanyaGameBuild7.data.unityweb",
-        frameworkUrl: buildUrl + "/PlanetanyaGameBuild7.framework.js.unityweb",
-        codeUrl: buildUrl + "/PlanetanyaGameBuild7.wasm.unityweb",
+        dataUrl: buildUrl + "/PlanetanyaGameBuild8.data.unityweb",
+        frameworkUrl: buildUrl + "/PlanetanyaGameBuild8.framework.js.unityweb",
+        codeUrl: buildUrl + "/PlanetanyaGameBuild8.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "EllaNoa",
         productName: "PlanetanyaGame",
         productVersion: "0.1",
         showBanner: unityShowBanner,
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "720px";
+        canvas.style.height = "1280px";
       }
 
       loadingBar.style.display = "block";
