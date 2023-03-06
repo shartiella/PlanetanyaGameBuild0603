@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | PlanetanyaGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/PlanetanyaGameBuild8.loader.js";
+      var loaderUrl = buildUrl + "/PlanetanyaGameBuild9.loader.js";
       var config = {
-        dataUrl: buildUrl + "/PlanetanyaGameBuild8.data.unityweb",
-        frameworkUrl: buildUrl + "/PlanetanyaGameBuild8.framework.js.unityweb",
-        codeUrl: buildUrl + "/PlanetanyaGameBuild8.wasm.unityweb",
+        dataUrl: buildUrl + "/PlanetanyaGameBuild9.data.unityweb",
+        frameworkUrl: buildUrl + "/PlanetanyaGameBuild9.framework.js.unityweb",
+        codeUrl: buildUrl + "/PlanetanyaGameBuild9.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "EllaNoa",
         productName: "PlanetanyaGame",
@@ -94,9 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.height = "99%";
-        canvas.style.width = "100%";
-
+        canvas.style.width = "99%";
+        canvas.style.height = "100%";
       }
 
       loadingBar.style.display = "block";
